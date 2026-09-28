@@ -3,20 +3,24 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 
 const poppins = Poppins({
-  variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  variable: "--font-poppins",
 });
 
 export const metadata: Metadata = {
-  title: "HR Tool Update 02",
-  description: "HR tool — update 02",
+  title: "HR Portal",
+  description: "Internal onboarding and access provisioning tool.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang="en" className={`${poppins.variable} h-full antialiased`}>
-      <body className="min-h-full bg-page-bg">{children}</body>
+    <html lang="en">
+      <body className={`${poppins.variable} antialiased`}>{children}</body>
     </html>
   );
 }
