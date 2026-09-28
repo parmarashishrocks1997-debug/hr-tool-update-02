@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --color-page-bg: #f2f1fa;
+  --color-panel: #ffffff;
+  --color-sidebar: #1e1b33;
+  --color-indigo: #5b4fe0;
+  --color-indigo-dark: #4a3fd0;
+  --color-ink: #17152b;
+  --color-muted: #6b7280;
+  --color-border: #e6e4f0;
+}
+
+@theme inline {
+  --color-page-bg: var(--color-page-bg);
+  --color-panel: var(--color-panel);
+  --color-sidebar: var(--color-sidebar);
+  --color-indigo: var(--color-indigo);
+  --color-indigo-dark: var(--color-indigo-dark);
+  --color-ink: var(--color-ink);
+  --color-muted: var(--color-muted);
+  --color-border: var(--color-border);
+  --font-sans: var(--font-poppins);
+}
+
+body {
+  background: var(--color-page-bg);
+  color: var(--color-ink);
+  font-family: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+}
