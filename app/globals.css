@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+
+  --color-navy: #1e1b33;
+  --color-brand: #5b4fe0;
+  --color-brand-dark: #4a3fd1;
+  --color-page: #f4f3fb;
+  --color-ink: #15132b;
+}
+
+body {
+  background-color: var(--color-page);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0.5;
+}
